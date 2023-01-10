@@ -1,4 +1,4 @@
-/*Celular3 css*/
+/*Celular5 css*/
 
 .cabecalho {
     display: flex;
@@ -39,6 +39,36 @@ a {
 .img__seguranca--todos {
     margin-right: 30px;
 }
+
+/*Seção monitoramento coloborativo*/
+
+.img__coloborativo {
+    width: 420px;
+    margin-left: 50px;
+}
+
+.monitoramento__coloborativo {
+    background-color:;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 330px;
+    padding: 40px;
+}
+
+.h2__monitoramento {
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.p__monitoramento {
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+
 
 
 
@@ -116,4 +146,3 @@ a {
 
 
     }
-
