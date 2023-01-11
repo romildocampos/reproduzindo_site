@@ -1,4 +1,4 @@
-<!--HTML 5-->
+<!--HTML 6-->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -13,33 +13,39 @@
     </style>
 </head>
 <body>
-    <header class="cabecalho container">
+    <header>
             
-                <img style="width: 80px;" src="logocftv1.jpeg" alt="Logo da Apeperia" class="cabecalho__logo">
-                <h2 class="cabecalho__titulo">Rc@m Eletrônica</h2>
-            
-            <nav class="cabecalho__navegacao">
-                <ul>
-                    <li class="cabecalho__link"><a href="#">Sobre</a></li>
-                    <li class="cabecalho__link"><a href="#">Planos</a></li>
-                    <li class="cabecalho__link"><a href="#">Blog</a></li>
-                    <li class="cabecalho__link"><a href="#">Destaques</a></li>
-                    <li class="cabecalho__link"><a href="#">Institucional</a></li>
+                <div class="header__container">
                     
-                </ul>
-            </nav>
-        </header>
+                        <img style="width: 80px;" src="logocftv1.jpeg" alt="Logo da Apeperia" class="cabecalho__logo">
+                        <h2 class="cabecalho__titulo">Rc@m Eletrônica</h2>
+                    
+                                
+                                <nav class="cabecalho__navegacao">
+                    <div class="ul__flex">
+                        <ul class="flex__ul">
+                            <li class="cabecalho__link"><a href="#">Sobre</a></li>
+                            <li class="cabecalho__link"><a href="#">Planos</a></li>
+                            <li class="cabecalho__link"><a href="#">Blog</a></li>
+                            <li class="cabecalho__link"><a href="#">Destaques</a></li>
+                            <li class="cabecalho__link"><a href="#">Institucional</a></li>
+                    
+                        </ul>
+                    </div>
+                                </nav>
+                </div>
+    </header>
         
      <!-- Banner Rotativo -->
    <!--Carrossel-->
-   <section id="banner" class="carousel slide" data-bs-ride = "carousel" >
+   <section id="banner" class="carousel slide secao__banner " data-bs-ride = "carousel" >
     <div id="indicadores" class="carousel-indicators">
        <button type="button" data-bs-target="#banner" data-bs-slide-to="0" class="active"></button>
        <button type="button" data-bs-target="#banner" data-bs-slide-to="1"></button>>
        <button type="button" data-bs-target="#banner" data-bs-slide-to="2"></button>>
        <button type="button" data-bs-target="#banner" data-bs-slide-to="3"></button>>
     </div>
-    <div id="imagens"class="carousel-inner">
+    <div id="imagens"class="carousel-inner img__banner">
        <div class="carousel-item active">
         <img style="height: 400px;" src="monitoramento4.jpg" alt="imagem1" class="d-block w-100">
        </div> 
@@ -65,22 +71,46 @@
 </section>
    <!--End Banner Rotativo -->
 
+   <!--SECAO SEGURANCA TODOS-->
+  <section class="seguranca__todos--container-fluid" style="height: ;">
+    
+        <div class="flex__seguranca--todos">
+            <h2 class="seguranca__todos--titulo ">Segurança Todos</h2>
+            <img style="height: 
+            180px;" src="olho_cftv.png" alt="olho" class="img__seguranca--todos">
+            <p class="p__seguranca--todos ">Segurança ao <span class="span__geral">alcance de todos</span></p>
+        </div><hr>
+    
+  </section>
 
-  <section class="seguranca__todos container" style="height: 400px;">
-    <div class="row">
-        <h2 class="seguranca__todos--titulo col-sm-4 text-center col-md-3 align-self-md-center">Segurança Todos</h2>
-        <img style="height: 250px;" src="olho_cftv.png" alt="olho" class="img__seguranca--todos col-sm-4 col-md-5 ">
-        <p class="col-sm-4 col-md-3 text-center align-self-md-center">Segurança ao alcance de todos</p>
+ <section class="monitoramento__coloborativo--secao">
+    <div class="flex__monitoramento--coloborativo">
+        <h2 class="h2__coloborativo--titulo ">Monitore sua Rua <span class="span__geral">em tempo real</span></h2>
+        <img src="img_monitoramento_colaborativo.png" alt="monitoramento_coloborativo" class="img__coloborativo" style="height: 180px;">
+        <p class="p__coloborativo ">Segurança ao <span class="span__geral">alcance de todos</span></p>
+       
+    </div><hr>
+  </section>
+
+  <section class="logos__contato">
+    <div class="logos">
+        <img class="logos__contato" src="logo_casa.svg" alt="logo-casa">
+        <label>Para sua casa</label>
     </div>
-    
-    
+    <div class="logos">
+        <img class="logos__contato" src="logo_condominio.svg" alt="logo-condominio">
+        <label>Para sua casa</label>
+    </div>
+    <div class="logos">
+        <img class="logos__contato" src="logo_comercio.svg" alt="logo-comercio">
+        <label>Para sua casa</label>
+    </div><hr>
+  </section><hr>
+
+  <section class="video">
+    <video src=""></video>
   </section>
 
-  <section class="monitoramento__coloborativo" style="width: 400px;">
-    <img src="img_monitoramento_colaborativo.png" alt="monitoramento_coloborativo" class="img__coloborativo">
-    <h2 class="h2__monitoramento col-sm-4 text-center col-md-3 align-self-md-center">Monitore sua Rua em tempo real</h2>
-    <p class="p__monitoramento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum corporis quas sunt quibusdam non quaerat temporibus eum facere sit, quidem odit explicabo illo assumenda ex necessitatibus ipsam maiores libero consectetur.</p>
-  </section>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   
 </body>
