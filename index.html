@@ -1,4 +1,3 @@
-<!--HTML 7-->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,113 +5,156 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <title>Tentando fazer site</title>
-    <link rel="stylesheet" href="header.css">
-    <style>
-       
-    </style>
+    <title>Treinando site com Bootstrap</title>
+    <link rel="stylesheet" href="bootstrap_geral.css">
 </head>
 <body>
-    <header>
-            
-                <div class="header__container">
-                    
-                        <img style="width: 80px;" src="logocftv1.jpeg" alt="Logo da Apeperia" class="cabecalho__logo">
-                        <h2 class="cabecalho__titulo">Rc@m Eletrônica</h2>
-                    
-                                
-                                <nav class="cabecalho__navegacao">
-                    <div class="ul__flex">
-                        <ul class="flex__ul">
-                            <li class="cabecalho__link"><a href="#">Sobre</a></li>
-                            <li class="cabecalho__link"><a href="#">Planos</a></li>
-                            <li class="cabecalho__link"><a href="#">Blog</a></li>
-                            <li class="cabecalho__link"><a href="#">Destaques</a></li>
-                            <li class="cabecalho__link"><a href="#">Institucional</a></li>
-                    
-                        </ul>
-                    </div>
-                                </nav>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary accordion-body col-12 position-fixed "style="z-index:999;"><br>
+          <div class="container-fluid col-11 m-auto">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!--INICIO CARRROSEL-->
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="slide3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="slide4.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="monitoramento4.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--CARROSSEL FIM-->
+
+      <!--INICIO CARDS-->
+      <div class="card mb-3  flex-md-row flex-lg-row"><!--CARD1-->
+        <img src="olho_cftv.png" class="card-img-top" alt="..." style="width: 500px;">
+        <div class="card-body">
+          <h5 class="card-title">Segurança para Todos</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <!--<p class="card-text"><small class="text-muted">Fique de olho</small></p>-->
+          <!--INICIO MODAL 1-->
+          <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Titulo Modal</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-    </header>
+                <div class="modal-body">
+                  <img src="olho_cftv.png" alt="celular" style="width: 450px;">
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt nobis eum tenetur nemo eaque nisi ullam rem fugit omnis voluptate consequatur placeat laborum, vel voluptatem vero quam non corporis impedit?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae molestias natus, delectus assumenda doloremque vel. Quibusdam facilis, veniam at illo autem eligendi molestiae cum sapiente voluptatem, deleniti amet consequatur soluta.lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rem ducimus cumque recusandae voluptate voluptas, fuga sed corporis consectetur at, velit laudantium assumenda iste. Reiciendis sunt labore odit voluptates dolorem?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Veja mais</button>
+        </div>
+      </div>
+      <!--FIM MODAL1-->
+      <div class="card flex-md-row flex-lg-row"><!--CARD2-->
+        <div class="card-body">
+          <h5 class="card-title">Monitoramento de Ruas , casas, comercios e condominio</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <!--<p class="card-text"><small class="text-muted">Monitoramento em tempo real</small></p>-->
+
         
-     <!-- Banner Rotativo -->
-   <!--Carrossel-->
-   <section id="banner" class="carousel slide secao__banner " data-bs-ride = "carousel" >
-    <div id="indicadores" class="carousel-indicators">
-       <button type="button" data-bs-target="#banner" data-bs-slide-to="0" class="active"></button>
-       <button type="button" data-bs-target="#banner" data-bs-slide-to="1"></button>>
-       <button type="button" data-bs-target="#banner" data-bs-slide-to="2"></button>>
-       <button type="button" data-bs-target="#banner" data-bs-slide-to="3"></button>>
-    </div>
-    <div id="imagens"class="carousel-inner img__banner">
-       <div class="carousel-item active">
-        <img style="height: 400px;" src="monitoramento4.jpg" alt="imagem1" class="d-block w-100">
-       </div> 
-       <div class="carousel-item">
-        <img style="height: 400px;" src="slide3.jpg" alt="imagem2" class="d-block w-100">
-       </div>
-       <div class="carousel-item">
-        <img style="height: 400px;" src="slide4.jpg" alt="imagem3" class="d-block w-100">
-       </div>
-       <div class="carousel-item">
-        <img style="height: 400px;" src="alarme.png" alt="imagem4" class="d-block w-100">
-       </div>
-    </div>
+        </div>
+        <img src="img_monitoramento_colaborativo.png" class="card-img-bottom" alt="monitoramento de ruas" style="width: 450px;">
+        <!--______________________________________________________-->
+        
+        <!--______________________________________________________-->
+      </div>
+      <div class="card mt-3 flex-md-row flex-lg-row"><!--CARD3-->
+        <img src="CFTV-Seguranca.jpg" class="card-img-top m-auto" alt="..." style="width: 400px; height: 300px;">
+        <div class="card-body">
+          <h5 class="card-title">Fique Protegido</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div><hr> 
+      <!--FIM CARDS-->
 
-    <div id="controles">
-        <button type="button" class="carousel-control-prev" data-bs-target="#banner" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button type="button" class="carousel-control-next" data-bs-target="#banner" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </button>
-    </div>
-</section>
-   <!--End Banner Rotativo -->
-
-   <!--SECAO SEGURANCA TODOS-->
-  <section class="seguranca__todos--container-fluid" style="height: ;">
+      <!--INICIO TEXTO CONTEUDO-->
     
-        <div class="flex__seguranca--todos">
-            <h2 class="seguranca__todos--titulo ">Segurança Todos</h2>
-            <img style="height: 
-            180px;" src="olho_cftv.png" alt="olho" class="img__seguranca--todos">
-            <p class="p__seguranca--todos ">Segurança ao <span class="span__geral">alcance de todos</span></p>
-        </div><hr>
-    
-  </section>
-
- <section class="monitoramento__coloborativo--secao">
-    <div class="flex__monitoramento--coloborativo">
-        <h2 class="h2__coloborativo--titulo ">Monitore sua Rua <span class="span__geral">em tempo real</span></h2>
-        <img src="img_monitoramento_colaborativo.png" alt="monitoramento_coloborativo" class="img__coloborativo" style="height: 180px;">
-        <p class="p__coloborativo ">Segurança ao <span class="span__geral">alcance de todos</span></p>
-       
-    </div><hr>
-  </section>
-
-  <section class="logos__contato">
-    <div class="logos">
-        <img class="logos__contato" src="logo_casa.svg" alt="logo-casa">
-        <label>Para sua casa</label>
-    </div>
-    <div class="logos">
-        <img class="logos__contato" src="logo_condominio.svg" alt="logo-condominio">
-        <label>Para sua casa</label>
-    </div>
-    <div class="logos">
-        <img class="logos__contato" src="logo_comercio.svg" alt="logo-comercio">
-        <label>Para sua casa</label>
-    </div><hr>
-  </section><hr>
-
-  <section class="video">
-    <video src=""></video>
-  </section>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  
+      
+          <div class="col-11 m-auto">
+                  <h2 class="text-center">Meu Titulo</h2>
+                  <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum animi voluptates aliquam similique quae accusamus repudiandae. Dolore sed impedit quia, doloremque, atque assumenda labore vel veritatis ratione modi voluptate ab?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi nesciunt quos ratione eius. Laudantium odit, omnis pariatur, iste, impedit laboriosam numquam dignissimos alias voluptatum atque sunt voluptatibus voluptates maxime? Similique.</p>
+                  
+          </div><hr>
+      
+      <!--FIM CONTEUDO-->
+      <div class="col-11 m-auto ">
+        <h2 class="text-center">Contato</h2>
+        <div class="m-auto div_contato" >
+            <img class="contato1 contato" src="email.png" alt="email" style="">
+            <img class="contato2 contato" src="facebook.png" alt="facebook" style="">
+            <img class="contato3 contato" src="icone-relogio.png" alt="relogio" style="">
+        </div>
+        
+</div><hr>
+      <!--CONTATO-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>   
 </body>
-
 </html>
