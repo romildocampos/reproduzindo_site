@@ -1,275 +1,55 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/*INICIO TELA CELULAR css*/
-
-.header__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 90%;
-    max-width: 380px;
-    margin: auto;
-    margin-top: 30px;
-}
-
-.cabecalho__logo {
-    margin-right: 150px;
-}
-.cabecalho__titulo {
-    margin-top: 30px;
-}
-.ul__flex {
-    display: flex;text-decoration-style: none;
-    align-items: center;
-    justify-content: space-around;
-    text-decoration: none;
-    
-}
-
-a ,li {
-    text-decoration: none;
-    list-style: none;
-}
-
-a:hover {
-    color:palevioletred;
-    text-decoration:;
-}
-a:active {
-    color:#00ff00;
-    text-decoration:underline;
-    background-color:#000000;
-  }
-
-.cabecalho__titulo {
-    color: red;
-    
-}
-.cabecalho__logo {
-    margin-left: 150px;
-}
-
-
-/*Banner Celular*/
-
-
-
-
-/*SECAO CELULAR SEGURANÇA TODOS*/
-
-.flex__seguranca--todos {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    max-width: 380px;
-}
-
-.flex__seguranca--todos {
+.contato {
     margin-top: 20px;
-    text-align: center;
-}
-
-.img__seguranca--todos {
-    margin-top: 20px;
-}
-
-.p__seguranca--todos {
-    margin-top: 20px;
-}
-
-
-/*Secao celular Monitoramento*/
-
-.monitoramento__coloborativo--secao{
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    max-width: 340px;
-} 
-.img__coloborativo {
-
-    margin-left: 50px;
-    margin-bottom: 10px;
-}
-
-
-.h2__coloborativo--titulo {
-    color: blue;
-    font-size: 1.1rem;
-    text-align: center;
-    margin-right:30px ;
-    margin-top:20px;
-}
-
-.p__coloborativo {
-
-    font-size: 0.8rem;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.logos__contato {
-    display: flex;
-    align-self: center;
     margin-left: 20px;
-    flex-direction:column ;
-    align-items: center;
-    width: 90%;
-    max-width: 768px;
-    justify-content: space-around;
 }
 
-.logos{
-    margin-right: 40px;
-    margin-top: 20px;
+.div_contato {
     display: flex;
-    flex-direction: column;
-    align-self: center;
-    align-content: center;
-    
+    flex-direction: row;
 }
 
-
-
-label {
-    border: 1px solid black;
-    border-radius: 5px;
-    height: 80px;
-    width: 130px;
-    background-color:orangered;
-    margin-top: 10px;
-    margin-left: 20px;
-    padding: 20px;
-    text-align: center;
-    font-weight: bold;
-    
-}
-
-/*FIM TELA CELULAR*/
-
-
-/*SECAO TELA MEDIA 768px*/
-
-@media screen and (min-width:768px ){
-   body {
-    background-color: #00ff00;
-   }
-
-   .flex__seguranca--todos {
-    display: flex;
-    flex-direction:row ;
-    align-items: center;
-    width: 90%;
-    max-width: 768px;
-}
-
-/*SECAO MONITORAMENTO MEDIO 768px*/
-.flex__monitoramento--coloborativo{
-    display: flex;
-    align-self: center;
-    margin-left: 20px;
-    flex-direction:row ;
-    align-items: center;
-    width: 90%;
-    max-width: 768px;
-}
-
-.img__coloborativo {
-    margin-right: 50px;
-}
-
-.p__coloborativo {
-    margin-left: 110px;
-}
-
-/*Logos casa condominio comercio*/
-
-.logos__contato {
-    display: flex;
-    align-self: center;
-    margin-left: 20px;
-    flex-direction:row ;
-    align-items: center;
-    width: 90%;
-    max-width: 768px;
-    justify-content: space-around;
-}
-
-
-
-
-
-}
-
-
-/*FIM TELA MÉDIA*/
-
-/*INICIO TELA GRANDE*/
-
-@media screen and (min-width:1024px ){
-    body {
-        background-color: crimson;
-    }
-
-    .header__container {
-        display: flex;
+@media screen and (min-width: 360px){
+    .div_contato {
         flex-direction: row;
-        justify-content: space-around;
-        width: 90%;
-        max-width: 1024px;
-        margin-left: 30px;
-        margin-top: 30px;
+        justify-content: center;
     }
 
-    .cabecalho__logo{
-        margin-bottom: 30px;
-        margin-left: 20px;
+    .contato1 {
+        margin-right: 50px;
+        width: 100px;
     }
 
-    .cabecalho__titulo{
-        margin-right: 70px;
-        margin-bottom: 30px;
+    .contato2 {
+        margin-right: 50px;
     }
+}
 
-    .flex__ul {
-        display: flex;
-        margin: 10px;
-    }
-
-    .cabecalho__link {
-        margin-right: 20px;
-    }
-
-    .flex__seguranca--todos {
-        display: flex;
-        flex-direction:row ;
-        align-items: center;
-        justify-content: space-around;
-        width: 90%;
-        max-width: 1024px;
-    }
-    .monitoramento__coloborativo--secao{
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        max-width: 1024px;
-    }
-    
-    .logos__contato {
-        display: flex;
-        justify-content: space-around;
-        margin-left: 100px;
-        
-    }
-
-    label {
-        margin-left: 100px;
-    }
+@media screen and (min-width: 768px){
     
 }
+
+@media screen and (min-width: 1024px){
+    .div_contato {
+         display: flex;
+        
+         align-items: center;
+         justify-content:space-around;
+         align-content: space-between;
+    }
+
+    .contato1 {
+        margin-right: 300px;
+        width: 180px;
+    }
+
+    .contato2 {
+        margin-right: 300px;
+    }
+
+    .contato {
+        width: 120px;
+    }
+}
+
+
 
