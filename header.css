@@ -1,4 +1,11 @@
+/* MEDIA 1*/
+
 @media screen and (min-width: 360px){
+
+    body {
+        
+
+    }
     .contato {
         margin-top: 20px;
         margin-left: 30px;
@@ -11,39 +18,94 @@
         
         
         
+        
     
     }
-
+    .carousel__1 {
+        width:500px ;
+    }
     .carrossel {
         width: 100%;
         max-width: 360px;
     }
+
+    .cards1{
+        width: 501px;
+    }
+
+    .cards2 {
+        width: 501px;
+    }
+
+    .cards3 {
+        width: 501px;
+    }
+
+    .conteudo__titulo {
+        width: 501px;
+    }
     .div_contato {
         flex-direction: column;
         justify-content: center;
+        margin-left: -40px;
+        
     }
 
     .contato1 {
-        margin-right: 50px;
-        width: 100px;
+        margin-right: ;
+        
     }
 
     .contato2 {
-        margin-right: 50px;
+        margin-left: 120px;
+        
+    }
+
+    .contato3{
+        margin-left: 160px;
+        background-color:;
+    }
+
+    .div__contato--1 {
+        width: 500px;
     }
 }
 
 @media screen and (min-width: 768px){
-
+    body {
+        
+    }
     .carrossel {
         width: 100%;
         max-width: 768px;
+    }
+
+    .carousel__1 {
+        width:770px ;
+    }
+
+    .cards1{
+        width: 770px;
+    }
+
+    .cards2 {
+        width: 770px;
+    }
+
+    .cards3 {
+        width: 770px;
+    }
+
+    .conteudo__titulo {
+        width: 770px;
     }
     
 }
 
 @media screen and (min-width: 1024px){
-
+    body {
+        
+    }
     .carrossel {
         width: 100%;
         max-width: 1024px;
@@ -66,6 +128,27 @@
     .contato {
         width: 120px;
     }
+
+    .carousel__1 {
+        width:1020px ;
+    }
+
+    .cards1{
+        width: 1020px;
+    }
+
+    .cards2 {
+        width: 1020px;
+    }
+
+    .cards3 {
+        width: 1020px;
+    }
+
+    .conteudo__titulo {
+        width: 1020px;
+    }
+    
 }
 
 
