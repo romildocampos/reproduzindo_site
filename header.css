@@ -1,22 +1,25 @@
-.contato {
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-.div_contato {
-    display: flex;
-    flex-direction: row;
-}
-
 @media screen and (min-width: 360px){
-
+    .contato {
+        margin-top: 20px;
+        margin-left: 30px;
+        
+    }
+    
+    .div_contato {
+    
+        flex-direction: column;
+        
+        
+        
+    
+    }
 
     .carrossel {
-        width: 90%;
+        width: 100%;
         max-width: 360px;
     }
     .div_contato {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
     }
 
@@ -33,7 +36,7 @@
 @media screen and (min-width: 768px){
 
     .carrossel {
-        width: 90%;
+        width: 100%;
         max-width: 768px;
     }
     
@@ -42,15 +45,13 @@
 @media screen and (min-width: 1024px){
 
     .carrossel {
-        width: 90%;
+        width: 100%;
         max-width: 1024px;
     }
     .div_contato {
          display: flex;
         
-         align-items: center;
-         justify-content:space-around;
-         align-content: space-between;
+         flex-direction: row;
     }
 
     .contato1 {
@@ -66,7 +67,6 @@
         width: 120px;
     }
 }
-
 
 
 
